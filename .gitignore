@@ -1,0 +1,18 @@
+# JetBrains IDEs
+/.idea/
+
+# Microsoft Visual Studio Code IDE
+/.vscode/
+
+# Dependency directories
+/node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Output build directory
+/dist/
+
+# Test output files
+/test/**/*.js
+/test/**/*.d.ts
