@@ -8,8 +8,8 @@
     "lib": [
       "ES2015"
     ],
+    "types": [],
     "forceConsistentCasingInFileNames": true,
-    "removeComments": false,
     "sourceMap": false,
     "strict": true,
     "noImplicitReturns": true

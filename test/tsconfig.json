@@ -4,7 +4,9 @@
     "composite": false,
     "declaration": false,
     "moduleResolution": "Node",
-    "outDir": ""
+    "allowSyntheticDefaultImports": true,
+    "outDir": "",
+    "types": ["node", "mocha", "chai"]
   },
   "references": [
     { "path": "../src"}
