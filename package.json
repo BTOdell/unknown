@@ -16,13 +16,19 @@
   },
   "homepage": "https://github.com/BTOdell/unknown",
   "type": "module",
-  "main": "dist/unknown.js",
-  "module": "dist/unknown.js",
-  "exports": "./dist/unknown.js",
-  "types": "dist/unknown.d.ts",
+  "main": "./dist/cjs/unknown.js",
+  "module": "./dist/unknown.js",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/unknown.js",
+      "default": "./dist/unknown.js"
+    }
+  },
+  "types": "./dist/unknown.d.ts",
   "files": [
     "dist/**/*.js",
-    "dist/**/*.d.ts"
+    "dist/**/*.d.ts",
+    "dist/**/package.json"
   ],
   "directories": {
     "lib": "dist"
@@ -39,9 +45,11 @@
     "typescript": "^3.9.3"
   },
   "scripts": {
-    "build": "tsc -b src",
+    "build": "tsc -b src && shx cp ./package.cjs.json ./dist/cjs/package.json",
+    "pretest": "npm run build",
     "test": "npm link && npm link unknown && npm run test-fast",
     "test-fast": "tsc -b test && mocha",
+    "prepublishOnly": "npm run build",
     "clean": "shx rm -rf ./dist ./test/**/*.js ./**/*.tsbuildinfo"
   },
   "engines": {
