@@ -1,6 +1,6 @@
 {
   "name": "unknown",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "A TypeScript utility library for interacting with the 'unknown' type.",
   "keywords": [
     "typescript"
