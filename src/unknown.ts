@@ -4,6 +4,6 @@
  * @param value
  * @param propName
  */
-export function hasProperty<U extends unknown, P extends PropertyKey>(value: U, propName: P): value is U & { [key in P]: unknown } {
+export function hasProperty<P extends PropertyKey>(value: unknown, propName: P): value is { [key in P]: unknown } {
     return typeof value === "object" && value !== null && propName in value;
 }

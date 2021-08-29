@@ -1,6 +1,6 @@
 {
   "name": "unknown",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "A TypeScript utility library for interacting with the 'unknown' type.",
   "keywords": [
     "typescript"
@@ -33,17 +33,15 @@
   "directories": {
     "lib": "dist"
   },
-  "dependencies": {},
   "devDependencies": {
-    "@types/chai": "^4.2.11",
-    "@types/mocha": "^7.0.2",
-    "@types/node": "^14.0.4",
-    "chai": "^4.2.0",
+    "@types/chai": "^4.2.21",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^12.12.6",
+    "chai": "^4.3.4",
     "link-self": "^0.2.0",
-    "mocha": "^7.1.2",
-    "npm-run-all": "^4.1.5",
-    "shx": "^0.3.2",
-    "typescript": "^3.9.3"
+    "mocha": "^9.1.1",
+    "shx": "^0.3.3",
+    "typescript": "^4.4.2"
   },
   "scripts": {
     "prepare": "link-self",
