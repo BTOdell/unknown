@@ -1,6 +1,5 @@
 import {hasProperty} from "unknown";
-import chai from "chai";
-const expect = chai.expect;
+import {expect} from "chai";
 
 type KnownObject = { known: "known" };
 

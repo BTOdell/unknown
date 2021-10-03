@@ -38,13 +38,11 @@
     "@types/mocha": "^9.0.0",
     "@types/node": "^12.12.6",
     "chai": "^4.3.4",
-    "link-self": "^0.2.0",
     "mocha": "^9.1.1",
     "shx": "^0.3.3",
-    "typescript": "^4.4.2"
+    "typescript": "4.5.0-beta"
   },
   "scripts": {
-    "prepare": "link-self",
     "build": "tsc -b src && shx cp ./package.cjs.json ./dist/cjs/package.json",
     "pretest": "npm run build",
     "test": "tsc -b test && mocha",

@@ -3,8 +3,7 @@
   "compilerOptions": {
     "composite": false,
     "declaration": false,
-    "moduleResolution": "Node",
-    "allowSyntheticDefaultImports": true,
+    "module": "Node12",
     "outDir": "",
     "types": ["node", "mocha", "chai"]
   },
