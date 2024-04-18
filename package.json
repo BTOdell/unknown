@@ -1,6 +1,6 @@
 {
   "name": "unknown",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "A TypeScript utility library for interacting with the 'unknown' type.",
   "keywords": [
     "typescript"
@@ -34,13 +34,13 @@
     "lib": "dist"
   },
   "devDependencies": {
-    "@types/chai": "^4.2.21",
-    "@types/mocha": "^9.0.0",
+    "@types/chai": "^4.3.14",
+    "@types/mocha": "^9.1.1",
     "@types/node": "^12.12.6",
-    "chai": "^4.3.4",
-    "mocha": "^9.1.1",
-    "shx": "^0.3.3",
-    "typescript": "4.5.0-beta"
+    "chai": "^4.4.1",
+    "mocha": "^9.2.2",
+    "shx": "^0.3.4",
+    "typescript": "^5.4.5"
   },
   "scripts": {
     "build": "tsc -b src && shx cp ./package.cjs.json ./dist/cjs/package.json",
