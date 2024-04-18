@@ -3,7 +3,7 @@
   "compilerOptions": {
     "composite": false,
     "declaration": false,
-    "module": "Node12",
+    "module": "Node16",
     "outDir": "",
     "types": ["node", "mocha", "chai"]
   },
