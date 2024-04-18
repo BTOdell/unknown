@@ -4,6 +4,7 @@
     "composite": false,
     "declaration": false,
     "module": "Node16",
+    "rootDir": "",
     "outDir": "",
     "types": ["node", "mocha", "chai"]
   },
